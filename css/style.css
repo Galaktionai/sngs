@@ -1080,6 +1080,15 @@ textarea {
   display: flex;
   align-items: center;
   padding-left: 24px;
+  border: 0;
+  outline: 0;
+}
+
+.calculate__top-fake-input::-webkit-outer-spin-button,
+.calculate__top-fake-input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }
 
 .calculate__mid {
