@@ -613,14 +613,14 @@
                                             </span>
                                             <div class="calculate__top__column__select">
                                                 <select id="select1" class="calculate-type" required>
-                                                    <option value="" class="calculate-type-placeholder" selected disabled hidden>Легковой автомобиль</option>
-                                                    <option  value="Кросовер">
+                                                    <option value="Легковой автомобиль" class="calculate-type-placeholder" id="sedan" selected>Легковой автомобиль</option>
+                                                    <option id="krossover" value="Кросовер">
                                                         <span>
                                                             Кросовер
                                                         </span>
                                                     </option>
-                                                    <option value="Кросовер">Кросовер</option>
-                                                    <option value="Кросовер">Кросовер</option>
+                                                    <option id="krossover" value="Кросовер">Кросовер</option>
+                                                    <option id="krossover" value="Кросовер">Кросовер</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -629,13 +629,13 @@
                                                 <span>
                                                     Цена метана за 1 м³
                                                 </span>
-                                                <input class="calculate__top-fake-input" type="number" placeholder="21.5">
+                                                <input class="calculate__top-fake-input" id="metan" type="number" placeholder="21.5">
                                             </div>
                                             <div class="calculate__top__column">
                                                 <span>
                                                     Стоимость установки
                                                 </span>
-                                                <input class="calculate__top-fake-input" type="number" placeholder="90 000 ₽">
+                                                <input class="calculate__top-fake-input" id="price-dowlound" type="text" id="money-mask" placeholder="90 000 ₽">
                                             </div>
                                         </div>
                                     </div>
@@ -644,29 +644,31 @@
                                             <span>
                                                 Пробег в месяц, км
                                             </span>
-                                            <input class="calculate__top-fake-input" type="number" placeholder="51,3">
+                                            <input class="calculate__top-fake-input" id="probeg" type="number" placeholder="51.3">
                                         </div>
                                         <div class="calculate__top__column">
                                             <span>
                                                 Цена топлива за 1 л
                                             </span>
-                                            <input class="calculate__top-fake-input" type="number" placeholder="51,3">
+                                            <input class="calculate__top-fake-input" id="price-fuel" type="number" placeholder="51.3">
                                         </div>
                                         <div class="calculate__top__column">
                                             <span>
                                                 Расход на 100 км
                                             </span>
-                                            <input class="calculate__top-fake-input" type="number" placeholder="51,3">
+                                            <input class="calculate__top-fake-input" id="raschod" type="number" placeholder="51.3">
                                         </div>
                                     </div>
-                                    <div class="calculate__bottom">
+                                    <div>
+                                        <span id="btn-result-gbo" class="calculate-button">Посчитать</span>
+                                    </div>
+                                    <div class="calculate__bottom none">
                                         <div>
                                             <span class="calculate__bottom-p">
                                                 Срок окупаемости
                                             </span>
                                             <div class="flex">
-                                                <span>4,5</span>
-                                                <span>месяца</span>
+                                                <span id="month-gbo"></span>
                                             </div>
                                         </div>
                                         <div>
@@ -674,8 +676,7 @@
                                                 Ваша экономия в месяц
                                             </span>
                                             <div class="flex">
-                                                <span>16 000</span>
-                                                <span>рублей</span>
+                                                <span id="econom-month"></span>
                                             </div>
                                         </div>
                                         <div>
@@ -683,13 +684,12 @@
                                                 Ваша экономия в год
                                             </span>
                                             <div class="flex">
-                                                <span>105 850</span>
-                                                <span>рублей</span>
+                                                <span id="econom-year"></span>
                                             </div>
                                         </div>
                                     </div>
-                                    <div style="width: fit-content;">
-                                        <a href="#" class="calculate-button" data-hystmodal="#install-gbo-modal">
+                                    <div>
+                                        <a href="#" class="calculate-button none" data-hystmodal="#install-gbo-modal">
                                             Оставить заявку на установку
                                         </a>
                                     </div>

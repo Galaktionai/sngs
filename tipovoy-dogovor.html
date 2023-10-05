@@ -443,22 +443,25 @@
                                 <div class="zaplint__dogovor">
                                         <div>
                                             <span class="zaplint__dogovor-title">Выберите нефтепродукты</span>
-                                            <select class="form-calculate-gbo__item-select-erghwgw" name="" id="select9">
-                                                <option value="1">Нефтепродукт</option>
+                                            <select class="form-calculate-gbo__item-select-erghwgw" name="" placeholder="wegweg" id="select9">
+                                                <option value="1" selected disabled hidden>Нефтепродукт</option>
                                                 <option value="2">Нефтепродукт-1</option>
                                                 <option value="3">Нефтепродукт-2</option>
                                                 <option value="4">Нефтепродукт-3</option>
                                                 <option value="5">Нефтепродукт-4</option>
                                                 <option value="6">Нефтепродукт-5</option>
+                                                <option value="6">Нефтепродукт-5</option>
+                                                <option value="6">Нефтепродукт-5</option>
+                                                <option value="6">Нефтепродукт-5</option>
                                             </select>
                                         </div>
                                         <div>
                                             <span class="zaplint__dogovor-title">Объем нефтепродуктов, л</span>
-                                            <input class="gbo__application-input" type="text" placeholder="1 000 л" required>
+                                            <input class="gbo__application-input" type="text" placeholder="1 000 л" id="litr-mask" required>
                                         </div>
                                         <div>
                                             <span class="zaplint__dogovor-title">Населенный пункт</span>
-                                            <input class="gbo__application-input" type="text" placeholder="п.Сангары" required>
+                                            <input class="gbo__application-input" type="text" placeholder="Введите ваш населенный пункт" required>
                                         </div>
                                         <div class="opacity0">
                                             <span class="zaplint__dogovor-title">Пусто</span>
@@ -484,7 +487,7 @@
                                         </div>
                                         <div>
                                             <span class="zaplint__dogovor-title">ОГРН / ОРГНИП</span>
-                                            <input class="gbo__application-input input-green" type="number" placeholder="185157615696" required>
+                                            <input class="gbo__application-input" type="number" maxlength = "15" placeholder="XXXХХХХХХХХХХХХ" required>
                                         </div>
                                         <div>
                                             <span class="zaplint__dogovor-title opacity0">Кнопка</span>
@@ -497,31 +500,31 @@
                                 <div class="zaplint__dogovor">
                                         <div>
                                             <span class="zaplint__dogovor-title">Название организации</span>
-                                            <input class="gbo__application-input" type="text" placeholder='ООО "Название компании"' required>
+                                            <input class="gbo__application-input" type="text" placeholder='Название организации' required>
                                         </div>
                                         <div>
                                             <span class="zaplint__dogovor-title">ИНН</span>
-                                            <input class="gbo__application-input" type="number" placeholder="123456789012" required>
+                                            <input class="gbo__application-input" type="number" placeholder="ХХХХХХХХХХХХ" required>
                                         </div>
                                         <div class="ip">
                                             <span class="zaplint__dogovor-title">КПП</span>
-                                            <input class="gbo__application-input" type="number" placeholder="123456789" required>
+                                            <input class="gbo__application-input" type="number" placeholder="XXXXXXXXX" required>
                                         </div>
                                         <div>
                                             <span class="zaplint__dogovor-title">ОКПО</span>
-                                            <input class="gbo__application-input" type="number" placeholder="123456789" required>
+                                            <input class="gbo__application-input" type="number" placeholder="XXXXXXXX" required>
                                         </div>
                                         <div>
                                             <span class="zaplint__dogovor-title">ОКВЭД</span>
-                                            <input class="gbo__application-input" type="number" placeholder="123456789" required>
+                                            <input class="gbo__application-input" type="number" placeholder="XXXX" required>
                                         </div>
                                         <div>
                                             <span class="zaplint__dogovor-title">Дата регистрации</span>
-                                            <input class="gbo__application-input" type="date" placeholder="30.07.2000" required>
+                                            <input class="gbo__application-input" id="date-mask" type="text" placeholder="дд.мм.гггг" required>
                                         </div>
                                         <div>
                                             <span class="zaplint__dogovor-title">Телефон организации</span>
-                                            <input class="gbo__application-input" id="phone-mask" type="text" placeholder="Телефон" required>
+                                            <input class="gbo__application-input" id="phone-mask" type="text" placeholder="+7 ХХХ ХХ - ХХ - ХХ" required>
                                         </div>
                                 </div>
                                 <div>
@@ -541,48 +544,48 @@
                                     </div>
                                     <div>
                                         <span class="zaplint__dogovor-title">Город</span>
-                                        <input class="gbo__application-input" type="text" placeholder="Введите" required>
+                                        <input class="gbo__application-input" type="text" placeholder="Населенный пункт" required>
                                     </div>
                                     <div>
                                         <span class="zaplint__dogovor-title">Район</span>
-                                        <input class="gbo__application-input" type="text" placeholder="Введите" required>
+                                        <input class="gbo__application-input" type="text" placeholder="Район" required>
                                     </div>
                                     <div>
                                         <span class="zaplint__dogovor-title">Улица</span>
-                                        <input class="gbo__application-input" type="text" placeholder="Введите" required>
+                                        <input class="gbo__application-input" type="text" placeholder="ул. " required>
                                     </div>
                                     <div class="zaplint__dogovor__grid">
                                         <div>
                                             <span class="zaplint__dogovor-title">Индекс</span>
-                                            <input class="gbo__application-input" type="text" placeholder="Введите" required>
+                                            <input class="gbo__application-input" type="text" placeholder="ХХХ ХХX" required>
                                         </div>
                                         <div>
                                             <span class="zaplint__dogovor-title">Дом</span>
-                                            <input class="gbo__application-input" type="text" placeholder="Введите" required>
+                                            <input class="gbo__application-input" type="text" placeholder="Введите номер" required>
                                         </div>
                                     </div>
                                     <div class="zaplint__dogovor__grid">
                                         <div>
                                             <span class="zaplint__dogovor-title">Корпус</span>
-                                            <input class="gbo__application-input" type="text" placeholder="Введите" required>
+                                            <input class="gbo__application-input" type="text" placeholder="Введите номер" required>
                                         </div>
                                         <div>
                                             <span class="zaplint__dogovor-title">Офис</span>
-                                            <input class="gbo__application-input" type="text" placeholder="Введите" required>
+                                            <input class="gbo__application-input" type="text" placeholder="Введите номер" required>
                                         </div>
                                     </div>
                                 </div>
                                 <span class="zaplint__dogovor__com">
                                     Комментарий
                                 </span>
-                                <textarea class="zaplint__dogovor__textarea" name="" id=""></textarea>
+                                <textarea class="zaplint__dogovor__textarea" name="" id="" placeholder="Введите ваше сообщение"></textarea>
                                 <label class="zaplint__dogovor__checkbox">
-                                    <input type="checkbox" class="toggle-checkbox" required="">
+                                    <input type="checkbox" class="toggle-checkbox" checked required="">
                                     <div class="toggle-switch"></div>
                                     <span>Я согласен(а) с условиями <a href="#">договор-оферты</a></span>
                                 </label>
                                 <label class="zaplint__dogovor__checkbox">
-                                    <input type="checkbox" class="toggle-checkbox" required="">
+                                    <input type="checkbox" class="toggle-checkbox" checked required="">
                                     <div class="toggle-switch"></div>
                                     <span>Я согласен(а) на <a href="#">обработку персональных данных</a></span>
                                 </label>
