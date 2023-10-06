@@ -251,7 +251,7 @@ textarea {
 }
 
 .left-menu-main-link__ul {
-  margin: 20px 0 0;
+  margin: 30px 0 0;
   display: none;
   gap: 20px;
 }
@@ -267,7 +267,7 @@ textarea {
 .left-menu-main-link__ul li a {
   color: var(--black);
   line-height: 29px;
-  padding: 10px 16px;
+  padding: 5.5px 16px;
 }
 
 .left-menu-main-link__ul li a.active {
@@ -1378,6 +1378,8 @@ textarea {
   font-weight: 400;
   line-height: 29px;
   font-size: 16px;
+  margin-bottom: 16px;
+  display: block;
 }
 
 .gbo__application-input {
