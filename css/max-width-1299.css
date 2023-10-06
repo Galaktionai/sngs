@@ -158,37 +158,32 @@
     -ms-transform: rotate(180deg) scale(0.8);
     -o-transform: rotate(180deg) scale(0.8);
   }
-  .header__adaptiv-accordion-podpol:after {
-    content: "";
-    display: block;
-    background: url(../img/chevron-down-white.svg);
-    width: 20px;
-    height: 20px;
-    transform: rotate(50deg) scale(0.8);
-    -webkit-transform: rotate(50deg) scale(0.8);
-    -moz-transform: rotate(180deg) scale(0.8);
-    -ms-transform: rotate(50deg) scale(0.8);
-    -o-transform: rotate(50deg) scale(0.8);
-    fill: var(--white);
-    margin-left: 10px;
-  }
-  .header__adaptiv-accordion-details[open] summary:after {
+  .header__adaptiv-accorddrerherhon-podpol img{
     transform: rotate(0deg) scale(0.8);
     -webkit-transform: rotate(0deg) scale(0.8);
     -moz-transform: rotate(0deg) scale(0.8);
     -ms-transform: rotate(0deg) scale(0.8);
     -o-transform: rotate(0deg) scale(0.8);
+    margin-left: 10px;
   }
+  .header__adaptiv-accorddrerherhon-podpol a{
+    color: var(--light-blue);
+  }
+  .header__adaptiv-accordion-details[open] img {
+    transform: rotate(180deg) scale(0.8) !important;
+    -webkit-transform: rotate(180deg) scale(0.8) !important;
+    -moz-transform: rotate(180deg) scale(0.8) !important;
+    -ms-transform: rotate(180deg) scale(0.8) !important;
+    -o-transform: rotate(180deg) scale(0.8) !important;
+}
   .header__adaptiv-accordion-a {
     display: inline-block;
     font-weight: 400;
     color: var(--light-blue);
-    line-height: 11px;
-    height: 11px;
-    padding: 14.5px 0;
-    margin-bottom: 24px;
+    padding: 10px 0;
+    margin-bottom: 20px;
   }
-  .header__adaptiv-accordion-podpol {
+  .header__adaptiv-accorddrerherhon-podpol {
     display: inline-block;
     font-weight: 400;
     color: var(--light-blue);
@@ -198,6 +193,9 @@
     margin-bottom: 20px;
     display: flex;
     align-items: center;
+  }
+  details > summary:first-of-type {
+    list-style: none;
   }
   .header-top.active-burger {
     background-color: var(--blue);
@@ -548,5 +546,11 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+  }
+  .header__adaptiv.active-burger{
+    overflow: scroll;
+  }
+  body.active-burger{
+    overflow: hidden;
   }
 }
