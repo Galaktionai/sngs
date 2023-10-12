@@ -244,6 +244,16 @@ textarea {
 
 .left-menu-main-link-svg {
   margin: 0 20px;
+  cursor: pointer;
+}
+
+.choices__input.choices__input--cloned{
+  background-color: var(--light-blue);
+  
+}
+
+.choices__input.choices__input--cloned::-webkit-input-placeholder{
+  color: var(--gray);
 }
 
 .left-menu-main-link-svg.active {
@@ -435,6 +445,10 @@ textarea {
   color: var(--blue);
   display: flex;
   align-items: center;
+}
+
+.gbo__application-input::-webkit-input-placeholder{
+  color: var(--gray);
 }
 
 .news__cart__info-a svg {
@@ -2078,12 +2092,12 @@ textarea {
   display: none;
 }
 
-.calculate__top__column__select .choices__list.choices__list--single {
-  background: var(--white);
+.choices__list--multiple .choices__item{
+  display: inline-block;
 }
 
-.calculate__top__column__select .choices {
-  width: 100%;
+.calculate__top__column__select .choices__list.choices__list--single {
+  background: var(--white);
 }
 
 .calculate__top__column__select .choices__list--dropdown.choices__list[aria-expanded] {
