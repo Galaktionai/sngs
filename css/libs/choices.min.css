@@ -301,9 +301,13 @@
 
 
 .choices__item.choices__item--selectable{
-    color: #B8B8B8;
+    color: var(--blue);
     display: block;
 }
+#choices--qrwv-item-choice-1{
+    display: none;
+}
+
 #choices--select1-item-choice-1{
     display: none;
 }

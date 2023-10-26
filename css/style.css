@@ -1414,11 +1414,7 @@ textarea {
   margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }
 
-.gbo__application-input[type=date]::-webkit-inner-spin-button,
-.gbo__application-input[type=date]::-webkit-calendar-picker-indicator {
-  display: none;
-  -webkit-appearance: none;
-}
+
 
 .gbo__application-button {
   background-color: var(--white);
